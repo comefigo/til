@@ -1,4 +1,15 @@
-# プロセスの永続化
+# ローカルに開発用Webサーバを立てる
+
+ローカルでちょっとしたWeb開発をしたいときは**parcel**
+（Node.js v5.2以上、パッケージマネージャーyarnを導入前提）
+parcelで依存パッケージの自動収集とpackage.jsonの記録、Webサーバの1つで3役をしてくれる優れもの！
+
+```
+> yarn add parcel-bundler
+
+> npx parcel ./index.html
+```
+# プロセスの永続化(旧)
 
 https://www.npmjs.com/package/forever
 
