@@ -38,3 +38,12 @@ https://github.com/nodesource/distributions/blob/master/README.md
 
 > sudo yum install nodejs
 ```
+
+# npm initの初期値を設定する方法
+
+package.jsonのlicenseの初期値がMITになる<br/>
+ただし、scriptsは初期設定できない
+
+```
+> npm set init.license "MIT"
+```
