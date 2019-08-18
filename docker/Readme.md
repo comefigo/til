@@ -33,3 +33,15 @@ tomcatの場合
 
 - ホストとコンテナを別ボリューム
 - コンテナごとに必要な量
+
+# javaの導入
+
+```Dockerfile
+# install java for debug firebase functions
+RUN mkdir /opt/jdk && \
+    wget https://download.java.net/java/GA/jdk11/9/GPL/openjdk-11.0.2_linux-x64_bin.tar.gz && \
+    tar xvzf openjdk-11.0.2_linux-x64_bin.tar.gz -C /opt/jdk/ && \
+    rm -f openjdk-11.0.2_linux-x64_bin.tar.gz
+
+ENV PATH /opt/jdk/jdk-11.0.2/bin:$PATH
+```
